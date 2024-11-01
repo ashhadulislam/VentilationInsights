@@ -2,7 +2,7 @@
 
 
 
-```markdown
+
 ## Week 1
 
 This week, I focused on studying the nuances of lung and diaphragm protection during ventilation. I reviewed the Goligher 2020 paper [^1] and gathered several key insights:
@@ -47,4 +47,4 @@ The third paper on general Lung and Diaphragm-Protective Ventilation [^4] has be
 [^4]: Goligher, E. C., Dres, M., Patel, B. K., Sahetya, S. K., Beitler, J. R., Telias, I., ... & Brochard, L. (2020). Lung-and diaphragm-protective ventilation. *American Journal of Respiratory and Critical Care Medicine*, 202(7), 950-961.
 
 [^5]: Fainstein, F., Geli, S. M., Amador, A., Goller, F., & Mindlin, G. B. (2021). Birds breathe at an aerodynamic resonance. *Chaos: An Interdisciplinary Journal of Nonlinear Science*, 31(12).
-```
+
