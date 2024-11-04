@@ -1,6 +1,88 @@
 # VentilationInsights
 
 
+## Week 1.5
+
+This week, I reviewed the work by Graßhoff et al. [^3], where the researchers establish linear relationship between **surface EMG (sEMG)** and **muscle pressure ($P_{mus}$)**.
+
+### Previous Studies
+
+Previous studies have shown that **diaphragm electrical activity (EAdi)** correlates with $P_{mus}$. However, measuring EAdi is invasive. This study instead shows that **transcutaneous EMG (sEMG)**, a fully non-invasive measure, also correlates with $P_{mus}$.
+
+### Focus of This Paper
+
+1.  **sEMG correlates with $P_{mus}$ and transdiaphragmatic pressure ($P_{di}$)**.
+
+### What was done
+
+1. **Estimating Respiratory Effort**: The researchers used the **EMG-Time Product (ETP)** method, calculating the area under the sEMG curve to measure respiratory effort.
+2. They then found a relationship between ETP and $P_{mus}$ using a **conversion factor**.
+3. They considered two sEMG signals, from the **diaphragm** and **intercostal muscles**, selecting the signal with the higher **signal-to-noise ratio (SNR)** dynamically.
+
+### Detailed Methodology
+
+#### Data Preprocessing
+
+- **On one hand researchers were measuring Pressure** ($P_{es}$ and $P_{ga}$):
+   1. Use **occlusion maneuvers** to calculate a scaling factor, ensuring $P_{es}$ is measured accurately.
+   2. Remove **heartbeat-related artifacts** from $P_{es}$ and $P_{ga}$.
+   3. Calculate:
+      - **Transdiaphragmatic pressure ($P_{di}$)** as $P_{ga} - P_{es}$
+      - **Respiratory muscle pressure ($P_{mus}$)** as $P_{es} - (\text{Elastic recoil of chest wall})$
+
+- **On the other hand the researchers were measuring sEMG Signals**:
+   1. Remove **heartbeat noise** from the sEMG signals.
+   2. Smooth the sEMG signals with a **250 ms root mean square (RMS) filter**.
+   3. Measure **background noise** during passive phases of the patient (e.g., exhalation) and subtract it from the sEMG to ensure readings start from zero.
+
+#### Focus on Inspiratory Effort for Pressure and sEMG
+
+1. Calculate **PTP** values:
+   - **PTP$_{mus}$** and **PTP$_{di}$** are calculated for $P_{mus}$ and $P_{di}$ signals, respectively.
+   - Outlier breaths with pressure > 20 cm H$_2$O·s were excluded to focus on normal inspiratory efforts.
+   - A threshold-based method was used to detect the beginning and end of each inspiratory phase.
+   - **PTP values** are the areas under the $P_{mus}$ and $P_{di}$ curves.
+
+2. Calculate **ETP values**:
+   - **ETP$_{di}$** and **ETP$_{interc}$** represent the total electrical activity (in µVs) for the diaphragm and intercostal muscles, respectively.
+   - The signal with the higher SNR was chosen for analysis.
+   - Both are area under the curves
+
+#### Establishing the Relationship Between $P_{mus}$ and sEMG
+
+- Previous research showed that **EAdi and $P_{di}$** have a linear relationship in ventilated patients.
+- Assuming similar linearity, the researchers introduced a **conversion factor $K_{\text{EMG}}$**, a **neuromechanical conversion factor**, to convert ETP to PTP via the linear regression:
+
+$$
+\text{PTP}_{mus} = K_{\text{EMG}} \cdot \text{ETP} + P_{\text{bias}} \cdot T_i
+$$
+
+where:
+- $T_i$ is the duration of the inspiratory effort.
+- $P_{\text{bias}}$ is a constant bias term used to adjust for systematic offsets.
+
+#### Occlusion Maneuver for Baseline Calibration
+
+During occlusions, where the airway is closed:
+- The airway pressure ($P_{\text{aw}}$) equals $P_{es}$, meaning there’s no need for an esophageal catheter to measure $P_{es}$.
+- No air moves, so the diaphragm contracts isometrically (no length change), producing a pure muscle-generated pressure. This configuration isolates the diaphragm-generated pressure alone.
+
+The researchers used this setup to calculate a **baseline conversion factor** as follows:
+
+$$
+P_{mus,\text{EMG}} = \alpha \cdot K_{\text{occl,EMG}} \cdot (\text{EMG}_{\text{sel}} - \text{EMG}_{\text{sel,0}})
+$$
+
+where:
+- $\text{EMG}_{\text{sel,0}}$ represents the baseline EMG signal when there was no inspiratory effort.
+- $\alpha$ is a correction factor adjusting for overestimation during occlusions due to isometric contraction.
+
+Using this factor, they estimated the pressure-time product for $P_{mus}$:
+
+$$
+\text{PTP}_{mus,\text{EMG}} = \int P_{mus,\text{EMG}} \, dt = \alpha \cdot K_{\text{occl,EMG}} \cdot \text{ETP}_{\text{sel}}
+$$
+
 
 
 ## Week 1
