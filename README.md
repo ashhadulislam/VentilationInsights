@@ -54,7 +54,7 @@ Previous studies have shown that **diaphragm electrical activity (EAdi)** correl
 - Assuming similar linearity, the researchers introduced a **conversion factor $K_{\text{EMG}}$**, a **neuromechanical conversion factor**, to convert ETP to PTP via the linear regression:
 
 ```math
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\text{PTP}_{mus} = K_{\text{EMG}} \cdot \text{ETP} + P_{\text{bias}} \cdot T_i
 ```
 
 
