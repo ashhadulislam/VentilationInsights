@@ -57,9 +57,6 @@ Previous studies have shown that **diaphragm electrical activity (EAdi)** correl
 \text{PTP}_{mus} = K_{\text{EMG}} \cdot \text{ETP} + P_{\text{bias}} \cdot T_i
 ```
 
-
-$$\text{PTP}_{mus} = K_{\text{EMG}} \cdot \text{ETP} + P_{\text{bias}} \cdot T_i$$
-
 where:
 - $T_i$ is the duration of the inspiratory effort.
 - $P_{\text{bias}}$ is a constant bias term used to adjust for systematic offsets.
@@ -72,7 +69,10 @@ During occlusions, where the airway is closed:
 
 The researchers used this setup to calculate a **baseline conversion factor** as follows:
 
+```math
 $$P_{mus,\text{EMG}} = \alpha \cdot K_{\text{occl,EMG}} \cdot (\text{EMG}_{\text{sel}} - \text{EMG}_{\text{sel,0}})$$
+```
+
 
 where:
 - $\text{EMG}_{\text{sel,0}}$ represents the baseline EMG signal when there was no inspiratory effort.
@@ -80,7 +80,9 @@ where:
 
 Using this factor, they estimated the pressure-time product for $P_{mus}$:
 
+```math
 $$\text{PTP}_{mus,\text{EMG}} = \int P_{mus,\text{EMG}} \, dt = \alpha \cdot K_{\text{occl,EMG}} \cdot \text{ETP}_{\text{sel}}$$
+```
 
 
 
