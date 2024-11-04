@@ -53,9 +53,7 @@ Previous studies have shown that **diaphragm electrical activity (EAdi)** correl
 - Previous research showed that **EAdi and $P_{di}$** have a linear relationship in ventilated patients.
 - Assuming similar linearity, the researchers introduced a **conversion factor $K_{\text{EMG}}$**, a **neuromechanical conversion factor**, to convert ETP to PTP via the linear regression:
 
-$$
-\text{PTP}_{mus} = K_{\text{EMG}} \cdot \text{ETP} + P_{\text{bias}} \cdot T_i
-$$
+$$\text{PTP}_{mus} = K_{\text{EMG}} \cdot \text{ETP} + P_{\text{bias}} \cdot T_i$$
 
 where:
 - $T_i$ is the duration of the inspiratory effort.
@@ -69,9 +67,7 @@ During occlusions, where the airway is closed:
 
 The researchers used this setup to calculate a **baseline conversion factor** as follows:
 
-$$
-P_{mus,\text{EMG}} = \alpha \cdot K_{\text{occl,EMG}} \cdot (\text{EMG}_{\text{sel}} - \text{EMG}_{\text{sel,0}})
-$$
+$$P_{mus,\text{EMG}} = \alpha \cdot K_{\text{occl,EMG}} \cdot (\text{EMG}_{\text{sel}} - \text{EMG}_{\text{sel,0}})$$
 
 where:
 - $\text{EMG}_{\text{sel,0}}$ represents the baseline EMG signal when there was no inspiratory effort.
@@ -79,9 +75,7 @@ where:
 
 Using this factor, they estimated the pressure-time product for $P_{mus}$:
 
-$$
-\text{PTP}_{mus,\text{EMG}} = \int P_{mus,\text{EMG}} \, dt = \alpha \cdot K_{\text{occl,EMG}} \cdot \text{ETP}_{\text{sel}}
-$$
+$$\text{PTP}_{mus,\text{EMG}} = \int P_{mus,\text{EMG}} \, dt = \alpha \cdot K_{\text{occl,EMG}} \cdot \text{ETP}_{\text{sel}}$$
 
 
 
