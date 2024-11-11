@@ -4,7 +4,8 @@
 
 ### Respiratory System and Pressures
 
-#### Diagram (Refer to Image 1)
+![Alt text]([URL or file path](https://github.com/ashhadulislam/VentilationInsights/blob/main/Fig01.jpeg))
+
 
 ##### Key Components
 1. **Visceral Pleura** - The inner layer surrounding the lungs.
