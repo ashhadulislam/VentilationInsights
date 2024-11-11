@@ -4,7 +4,7 @@
 
 ### Respiratory System and Pressures
 
-![Alt text](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Fig01.jpeg)
+![Figure 1](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Fig01.jpeg)
 
 
 ##### Key Components
@@ -44,7 +44,10 @@
 
 ---
 
-### Transpulmonary and Thoracic Pressures (Refer to Image 2)
+### Transpulmonary and Thoracic Pressures
+
+![Figure 2](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Fig02.jpeg)
+
 
 #### Key Equations
 1. **Transpulmonary Pressure ($T_p$)**:
@@ -64,7 +67,9 @@
 
 ---
 
-### The Inspiration Process (Refer to Image 3)
+### The Inspiration Process 
+
+![Figure 3](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Fig03.jpeg)
 
 1. **Muscle Contraction**:
    - Intercostal muscles contract, pulling the ribs and sternum outward.
@@ -79,7 +84,7 @@
 
 ---
 
-### Detailed Pressure Analysis (Refer to Image 4)
+### Detailed Pressure Analysis
 
 1. **Pressure Points**:
    - $P_{\text{Pul}}$: Goes from 0 mm Hg to -1 mm Hg during inspiration.
