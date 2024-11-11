@@ -106,7 +106,7 @@
 ---
 
 ### Final Note
-$P_{\text{ul}}$ has to reach 760 mm Hg to balance with atmospheric pressure.
+$P_{\text{pul}}$ has to reach 760 mm Hg to balance with atmospheric pressure.
 
 ---
 
