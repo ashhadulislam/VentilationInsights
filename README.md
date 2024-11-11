@@ -4,7 +4,7 @@
 
 ### Respiratory System and Pressures
 
-![Alt text]([URL or file path](https://github.com/ashhadulislam/VentilationInsights/blob/main/Fig01.jpeg))
+![Alt text](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Fig01.jpeg)
 
 
 ##### Key Components
