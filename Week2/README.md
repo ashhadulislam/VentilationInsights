@@ -4,7 +4,7 @@
 
 ### Respiratory System and Pressures
 
-![Figure 1](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Fig01.jpeg)
+![Figure 1](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Week2/Fig01.jpeg)
 
 
 ##### Key Components
@@ -46,7 +46,7 @@
 
 ### Transpulmonary and Thoracic Pressures
 
-![Figure 2](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Fig02.jpeg)
+![Figure 2](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Week2/Fig02.jpeg)
 
 
 #### Key Equations
@@ -69,7 +69,7 @@
 
 ### The Inspiration Process 
 
-![Figure 3](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Fig03.jpeg)
+![Figure 3](https://raw.githubusercontent.com/ashhadulislam/VentilationInsights/refs/heads/main/Week2/Fig03.jpeg)
 
 1. **Muscle Contraction**:
    - Intercostal muscles contract, pulling the ribs and sternum outward.
